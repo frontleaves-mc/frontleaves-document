@@ -1,0 +1,10 @@
+{
+  "title": "Plugin",
+  "description": "Plugin 模块文档",
+  "icon": "Puzzle",
+  "root": true,
+  "defaultOpen": true,
+  "pages": [
+    "index"
+  ]
+}

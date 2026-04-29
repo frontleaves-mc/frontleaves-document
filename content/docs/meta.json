@@ -1,0 +1,14 @@
+{
+  "title": "竹简文档",
+  "description": "Frontleaves 文档库",
+  "icon": "Library",
+  "pages": [
+    "guide",
+    "---锋楪认证---",
+    "yggdrasil",
+    "---游戏指南---",
+    "game",
+    "---特性指南---",
+    "plugin"
+  ]
+}

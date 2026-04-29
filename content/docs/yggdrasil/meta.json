@@ -1,0 +1,13 @@
+{
+  "title": "锋楪认证",
+  "description": "锋楪认证使用指南",
+  "icon": "TreePine",
+  "root": true,
+  "defaultOpen": true,
+  "pages": [
+    "index",
+    "---连接指南---",
+    "...hmcl",
+    "...pcl"
+  ]
+}

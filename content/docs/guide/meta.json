@@ -1,0 +1,10 @@
+{
+  "title": "入门指南",
+  "icon": "BookOpen",
+  "description": "快速了解竹简文档",
+  "root": true,
+  "defaultOpen": true,
+  "pages": [
+    "index"
+  ]
+}

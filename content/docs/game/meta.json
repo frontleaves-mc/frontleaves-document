@@ -1,0 +1,10 @@
+{
+  "title": "游戏指南",
+  "description": "锋楪我的世界游戏游玩指南",
+  "icon": "Gamepad2",
+  "root": true,
+  "defaultOpen": true,
+  "pages": [
+    "index"
+  ]
+}
