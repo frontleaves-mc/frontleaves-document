@@ -1,66 +1,76 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Download, Gamepad2, BookOpen, Lock } from 'lucide-react';
 import Link from 'next/link';
-import { AIPromptCard } from './ai-prompt-card';
 
 export default function HomePage() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-4xl">
-      {/* Header */}
-      <div className="mb-12">
-        <h1 className="text-4xl font-bold mb-3">竹简文档</h1>
+      <div className="mb-14 text-center">
+        <h1 className="text-4xl font-bold mb-3">锋楪游戏 · 文档</h1>
         <p className="text-lg text-muted-foreground">
-          Bamboo 服务组件库文档中心
+          锋楪 Minecraft 服务器文档中心，帮助你快速上手游戏
         </p>
       </div>
 
-      {/* Libraries */}
       <div className="mb-12">
-        <h2 className="text-xl font-semibold mb-4">选择你的技术栈</h2>
-        <div className="space-y-3">
+        <h2 className="text-xl font-semibold mb-4">快速开始</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <Link
-            href="/docs/bamboo-base-go/quick-start"
-            className="group flex items-center justify-between p-5 border border-border rounded-xl hover:border-primary hover:bg-primary/5 transition-all"
+            href="/docs/yggdrasil"
+            className="group flex flex-col items-center gap-3 p-6 border border-border rounded-xl hover:border-primary hover:bg-primary/5 transition-all"
           >
-            <div>
+            <div className="flex items-center justify-center size-12 rounded-full bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
+              <Download className="size-6" />
+            </div>
+            <div className="text-center">
               <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
-                筱工具 (Golang)
+                客户端安装
               </h3>
               <p className="text-sm text-muted-foreground mt-1">
-                Go 语言基础组件库，基于 Gin 框架构建可靠的后端服务
+                下载并配置游戏客户端
               </p>
             </div>
-            <ArrowRight className="size-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+            <ArrowRight className="size-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
           </Link>
 
           <Link
-            href="/docs/bamboo-base-java/quick-start"
-            className="group flex items-center justify-between p-5 border border-border rounded-xl hover:border-primary hover:bg-primary/5 transition-all"
+            href="/docs/game"
+            className="group flex flex-col items-center gap-3 p-6 border border-border rounded-xl hover:border-primary hover:bg-primary/5 transition-all"
           >
-            <div>
+            <div className="flex items-center justify-center size-12 rounded-full bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
+              <Gamepad2 className="size-6" />
+            </div>
+            <div className="text-center">
               <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
-                筱工具 (Java)
+                游戏内容
               </h3>
               <p className="text-sm text-muted-foreground mt-1">
-                Java 语言基础组件库，基于 Spring Boot 3 构建企业级应用
+                服务器玩法与内容介绍
               </p>
             </div>
-            <ArrowRight className="size-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+            <ArrowRight className="size-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
           </Link>
 
-          <div className="flex items-center justify-between p-5 border border-border rounded-xl opacity-50">
-            <div>
-              <h3 className="font-semibold text-lg">bamboo-base-ts</h3>
-              <p className="text-sm text-muted-foreground mt-1">TypeScript 组件库</p>
+          <Link
+            href="/docs/guide"
+            className="flex flex-col items-center gap-3 p-6 border border-border rounded-xl opacity-50 cursor-not-allowed pointer-events-none"
+          >
+            <div className="flex items-center justify-center size-12 rounded-full bg-muted text-muted-foreground">
+              <BookOpen className="size-6" />
             </div>
-            <span className="text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground">规划中</span>
-          </div>
+            <div className="text-center">
+              <h3 className="font-semibold text-lg">教程</h3>
+              <p className="text-sm text-muted-foreground mt-1">
+                新手教程与进阶攻略
+              </p>
+            </div>
+            <span className="flex items-center gap-1 text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground">
+              <Lock className="size-3" />
+              敬请期待
+            </span>
+          </Link>
         </div>
       </div>
 
-      {/* AI Integration */}
-      <AIPromptCard />
-
-      {/* Footer CTA */}
       <div className="mt-12 pt-8 border-t border-border">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
@@ -71,7 +81,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="text-primary hover:underline"
             >
-              筱锋xiao_lfeng
+              筱锋
             </a>{' '}
             维护
           </p>
@@ -79,7 +89,7 @@ export default function HomePage() {
             href="/docs/guide"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity font-medium"
           >
-            开始阅读文档
+            查看文档
             <ArrowRight className="size-4" />
           </Link>
         </div>

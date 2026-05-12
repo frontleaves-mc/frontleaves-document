@@ -1,10 +1,36 @@
 {
   "title": "游戏指南",
-  "description": "锋楪我的世界游戏游玩指南",
+  "description": "锋楪 Minecraft 服务器游戏游玩指南",
   "icon": "Gamepad2",
   "root": true,
   "defaultOpen": true,
   "pages": [
-    "index"
+    "index",
+    "---机械动力---",
+    "create-core",
+    "create-ore-excavation",
+    "create-diesel-generators",
+    "create-new-age",
+    "create-jetpack",
+    "create-stuff-additions",
+    "create-enchantment-industry",
+    "---小女仆---",
+    "touhou-little-maid",
+    "maid-storage-manager",
+    "muhc",
+    "---工具与传送---",
+    "ftb-ultimine",
+    "falling-tree",
+    "waystones",
+    "---食物与料理---",
+    "enders-delight",
+    "farmers-delight",
+    "fruits-delight",
+    "ends-delight",
+    "extra-delight",
+    "kaleidoscope-cookery",
+    "---其他模组---",
+    "supplementaries",
+    "tacz"
   ]
 }
